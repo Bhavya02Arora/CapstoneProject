@@ -1,0 +1,8 @@
+{
+    "api_url": "http://127.0.0.1:8080/",
+    "base_url": "http://localhost:3000/",
+    "cloudfront_url": "http://localhost:3000/",
+    "cognito_login_url": "http://localhost:3000/login",
+    "cognito_logout_url": "http://localhost:3000/logout",
+    "post_images_url": "http://localhost:3000/images/posts"
+}
