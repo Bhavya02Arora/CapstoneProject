@@ -1,0 +1,13 @@
+# For  cmds:
+curl -X POST http://localhost:8080/login ^
+  -H "Content-Type: application/json" ^
+  -d "{ \"email\": \"ba2116@rit.edu\", \"password\": \"unicom12\" }"
+
+curl -X POST http://localhost:8080/api/posts ^
+  -H "Content-Type: application/json" ^
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1OTE4NjIwNiwianRpIjoiN2IxODQ1YWItM2ZmMC00YmQ1LTg1MjktMDA5NzdjODMyMjk0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImJhMjExNkByaXQuZWR1IiwibmJmIjoxNzU5MTg2MjA2LCJjc3JmIjoiNTkxNmVjNTUtYmZkZS00ZDk4LTlmOTUtMTZmYjIyODc2M2E5IiwiZXhwIjoxNzU5MTg5ODA2fQ.ML7L9H2TeDja0KafFAnQ_qTB6V9LtejJh9WcCeTrfrk" ^
+  -d "{ \"title\": \"Buy now! Limited time offer\", \"description\": \"Call 555-1234 for details\", \"category\": \"SELL\", \"price\": 10, \"item\": \"CS Beginners Textbook\", \"sub_category\": \"BOOKS\" }"
+
+
+curl -X GET http://localhost:8080/api/posts/68db0de50dfc5165d12e4ef5/moderation-status ^
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1OTE4NjIwNiwianRpIjoiN2IxODQ1YWItM2ZmMC00YmQ1LTg1MjktMDA5NzdjODMyMjk0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImJhMjExNkByaXQuZWR1IiwibmJmIjoxNzU5MTg2MjA2LCJjc3JmIjoiNTkxNmVjNTUtYmZkZS00ZDk4LTlmOTUtMTZmYjIyODc2M2E5IiwiZXhwIjoxNzU5MTg5ODA2fQ.ML7L9H2TeDja0KafFAnQ_qTB6V9LtejJh9WcCeTrfrk"

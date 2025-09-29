@@ -3,7 +3,8 @@
 import infra_config from '../../../public/infra_config.json';
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useAuth } from "@/lib/AuthContext";
+// import { useAuth } from "@/lib/AuthContext";
+import { useAuth } from "../../utils/AuthProvider";
 
 export default function MyProfilePage() {
   const { user, token } = useAuth();
